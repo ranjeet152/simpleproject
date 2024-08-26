@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+#road{
+   width:100vw;
+   height: 250px;
+   background:black;
+   position :relative;
+   top : 0;
+   left :  0;
+}
+#line1{
+width:300px;
+height:40px;
+position : absolute;
+top : 100px;
+left : 200px;
+background:white;
+
+}
+#line2{
+width:300px;
+height:40px;
+position : absolute;
+top : 100px;
+left : 600px;
+background:white;
+}
+
+#line3{
+width:300px;
+height:40px;
+position : absolute;
+top : 100px;
+left : 1000px;
+background:white;
+}
+#box{
+  width:100vw;
+  height:180px;
+  position: relative;
+  top: 0;
+  left : 0;
+} 
+marquee{
+  position : absolute;
+  top : 150px;
+  z-index: 5;
+  left : 0;
+
+}
+</style>
+</head>
+<body>
+<div id="box">
+<marquee>
+<svg width="1000"height="185">
+<rect x="70" y="10" width="220" height="130"
+fill="transparent" rx="150" stroke="crimson" stroke-width="10"/>
+
+<rect x="10" y="70" width="340" height="80" fill="crimson" rx="30"/>
+
+<g>
+<line x1="145" y1="10" x2="145" y2="80"
+stroke="crimson" stroke-width="10"/>
+
+<line x1="215" y1="10" x2="215" y2="80"
+stroke="crimson" stroke-width="10"/>
+</g>
+
+<g>
+<rect x="0" y="110" width="40" height="20" fill="#999"rx="10"/>
+<rect x="325" y="110" width="40" height="20" fill="#999"rx="10"/>
+</g>
+<g>
+<circle r="40px" fill="#222" stroke="white" stroke-width="7" 
+cx="90" cy="140"/>
+ <circle r="15px" fill="#555" cx="90" cy="140"/>
+</g>
+
+<g>
+<circle r="40px" fill="#222" stroke="white" stroke-width="7"
+ cx="270" cy="140"/>
+ <circle r="15px" fill="#555" cx="270" cy="140"/>
+</g>
+
+<g>
+ <circle r="15px" fill="gold" cx="340" cy="90"/>
+ <circle r="10px" fill="orange" cx="15" cy="90"/>
+ 
+</g>
+</svg>
+
+</marquee>
+
+</div>
+<div id="road">
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="line3"></div>
+</div>
+</body>
+</html>
